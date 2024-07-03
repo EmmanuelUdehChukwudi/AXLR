@@ -1,0 +1,18 @@
+<launch>
+  
+        <let name="urdf_path" value="$(find-pkg-share axlr_description)/urdf/main.urdf.xacro"/> 
+        <let name="rviz_config" value="$(find-pkg-share axlr_bringup)/rviz/display.rviz"/> 
+        <node pkg="robot_state_publisher" exec="robot_state_publisher">
+            <param name="robot_description" value="$(command 'xacro $(var urdf_path)')"/>
+        </node>
+    
+        <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py"/>
+        <node pkg="gazebo_ros" exec="spawn_entity.py"
+                args="-topic robot_description -entity axlr"/>
+        
+        <include file="$(find-pkg-share axlr_controller)/launch/controller.launch.py"/>
+
+        <node pkg="rviz2" exec="rviz2" output="screen"
+        args="-d $(var rviz_config)"/>
+   
+</launch>

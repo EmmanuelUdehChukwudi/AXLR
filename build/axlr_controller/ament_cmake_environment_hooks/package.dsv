@@ -1,0 +1,4 @@
+source;share/axlr_controller/local_setup.bash
+source;share/axlr_controller/local_setup.dsv
+source;share/axlr_controller/local_setup.sh
+source;share/axlr_controller/local_setup.zsh

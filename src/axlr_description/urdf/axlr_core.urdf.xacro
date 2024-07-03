@@ -1,6 +1,6 @@
+<?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <link name="world"> 
-    </link>
+    <link name="world"/>
     <link name="base_link">
         <visual>
             <origin xyz="0.0 ${-wheel_offset_from_width} ${base_height/2}" rpy="0.0 0.0 0.0"/>
@@ -23,7 +23,7 @@
     <joint name="world_base" type="fixed">
         <parent link="world"/>
         <child link="base_link"/>
-        <origin xyz="0.0 ${wheel_offset_from_width} ${wheel_offset_from_ground}" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.0 ${wheel_offset_from_width} ${wheel_offset_from_ground}" rpy="0.0 0.0 ${-PI/2}"/>
     </joint>
 
     <link name="right_wheel">

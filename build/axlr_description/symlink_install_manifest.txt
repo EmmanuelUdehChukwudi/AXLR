@@ -1,8 +1,11 @@
 /home/primerobotics/AXLR/install/axlr_description/share/axlr_description/urdf/axlr_core.urdf.xacro
+/home/primerobotics/AXLR/install/axlr_description/share/axlr_description/urdf/axlr_ros2_control.urdf.xacro
+/home/primerobotics/AXLR/install/axlr_description/share/axlr_description/urdf/gazebo_properties.urdf.xacro
 /home/primerobotics/AXLR/install/axlr_description/share/axlr_description/urdf/inertial_macros.urdf.xacro
 /home/primerobotics/AXLR/install/axlr_description/share/axlr_description/urdf/main.urdf.xacro
 /home/primerobotics/AXLR/install/axlr_description/share/axlr_description/urdf/properties.urdf.xacro
 /home/primerobotics/AXLR/install/axlr_description/share/axlr_description/launch/display.launch.py
+/home/primerobotics/AXLR/install/axlr_description/share/axlr_description/launch/display.launch.xml
 /home/primerobotics/AXLR/install/axlr_description/share/axlr_description/rviz/display.rviz
 /home/primerobotics/AXLR/install/axlr_description/share/ament_index/resource_index/package_run_dependencies/axlr_description
 /home/primerobotics/AXLR/install/axlr_description/share/ament_index/resource_index/parent_prefix_path/axlr_description
