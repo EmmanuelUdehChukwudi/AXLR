@@ -3,7 +3,7 @@
 
     <transmission name="right_wheel_transmission">
         <actuator name="right_wheel_motor" role="right_wheel_actuator"/>
-        <joint name="base_right_wheel" role="right_joint">
+        <joint name="right_wheel_joint" role="right_joint">
             <mechanicalReduction>1.0</mechanicalReduction>
         </joint>
         <plugin>transmission_interface/SimpleTransmission</plugin>
@@ -11,7 +11,7 @@
 
     <transmission name="left_wheel_transmission">
         <actuator name="left_wheel_motor" role="left_wheel_actuator"/>
-        <joint name="base_left_wheel" role="left_joint">
+        <joint name="left_wheel_joint" role="left_joint">
             <mechanicalReduction>1.0</mechanicalReduction>
         </joint>
         <plugin>transmission_interface/SimpleTransmission</plugin>
@@ -21,43 +21,25 @@
         <material>Gazebo/White</material>
     </gazebo>
     
-    <gazebo reference="right_wheel">
+    <gazebo reference="right_wheel_link">
         <material>Gazebo/Black</material>
-        <mu1>100000000000000.0</mu1>
-        <mu2>100000000000000.0</mu2>
-        <kp>1000000000000.0</kp>
-        <kd>10.0</kd>
-        <minDepth>0.001</minDepth>
-        <maxVel>10.0</maxVel>
-        <fdir1>1 0 0</fdir1>
     </gazebo>
     
-    <gazebo reference="left_wheel">
+    <gazebo reference="left_wheel_link">
         <material>Gazebo/Black</material>
-        <mu1>100000000000000.0</mu1>
-        <mu2>100000000000000.0</mu2>
-        <kp>1000000000000.0</kp>
-        <kd>10.0</kd>
-        <minDepth>0.001</minDepth>
-        <maxVel>10.0</maxVel>
-        <fdir1>1 0 0</fdir1>
     </gazebo>
 
-    <gazebo reference="base_caster_wheel">
+    <gazebo reference="caster_wheel_link">
         <material>Gazebo/Black</material>
         <mu1>0.1</mu1>
         <mu2>0.1</mu2>
-        <kp>1000000.0</kp>
-        <kd>100.0</kd>
-        <minDepth>0.001</minDepth>
-        <maxVel>10.0</maxVel>
     </gazebo>
 
     <gazebo>
         <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
             <robot_param>robot_description</robot_param>
             <robot_param_node>robot_state_publisher</robot_param_node>
-            <parameters>$(find axlr_controller)/config/axlr_controllers.yaml</parameters>
+            <!-- <parameters>$(find axlr_controller)/config/axlr_controllers.yaml</parameters> -->
         </plugin>
     </gazebo>
 </robot>

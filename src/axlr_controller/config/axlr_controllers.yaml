@@ -12,5 +12,5 @@ controller_manager:
 axlr_controller:
   ros__parameters:
     joints:
-      - base_right_wheel
-      - base_left_wheel
+      - right_wheel_joint
+      - left_wheel_joint

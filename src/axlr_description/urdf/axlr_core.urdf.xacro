@@ -94,6 +94,8 @@
             </geometry>
             <material name="black"/>
         </collision>
+        <xacro:sphere_inertia m="0.5" r ="${wheel_diameter/4}"
+                xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
     </link>
     <joint name="caster_joint" type="fixed">
         <origin xyz="-${base_width/2} 0.0 -${wheel_diameter/4}" rpy="0.0 0.0 0.0"/>

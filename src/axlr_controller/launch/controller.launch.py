@@ -15,7 +15,7 @@ def generate_launch_description():
         ],
     )
 
-    axlr_simple_controller = Node(
+    simple_controller = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["axlr_controller",
@@ -23,12 +23,10 @@ def generate_launch_description():
                 "/controller_manager"
         ]
     )
-    
-    
 
     return LaunchDescription(
         [
             joint_state_broadcaster_spawner,
-            axlr_simple_controller,
+            simple_controller,
         ]
     )
