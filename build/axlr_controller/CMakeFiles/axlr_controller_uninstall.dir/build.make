@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/primerobotics/AXLR/src/axlr_controller
+CMAKE_SOURCE_DIR = /home/emmanuel/AXLR/src/axlr_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/primerobotics/AXLR/build/axlr_controller
+CMAKE_BINARY_DIR = /home/emmanuel/AXLR/build/axlr_controller
 
 # Utility rule file for axlr_controller_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/axlr_controller_uninstall.dir/compiler_depend.make
 include CMakeFiles/axlr_controller_uninstall.dir/progress.make
 
 CMakeFiles/axlr_controller_uninstall:
-	/usr/bin/cmake -P /home/primerobotics/AXLR/build/axlr_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/emmanuel/AXLR/build/axlr_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 axlr_controller_uninstall: CMakeFiles/axlr_controller_uninstall
 axlr_controller_uninstall: CMakeFiles/axlr_controller_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/axlr_controller_uninstall.dir/clean:
 .PHONY : CMakeFiles/axlr_controller_uninstall.dir/clean
 
 CMakeFiles/axlr_controller_uninstall.dir/depend:
-	cd /home/primerobotics/AXLR/build/axlr_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/primerobotics/AXLR/src/axlr_controller /home/primerobotics/AXLR/src/axlr_controller /home/primerobotics/AXLR/build/axlr_controller /home/primerobotics/AXLR/build/axlr_controller /home/primerobotics/AXLR/build/axlr_controller/CMakeFiles/axlr_controller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/emmanuel/AXLR/build/axlr_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emmanuel/AXLR/src/axlr_controller /home/emmanuel/AXLR/src/axlr_controller /home/emmanuel/AXLR/build/axlr_controller /home/emmanuel/AXLR/build/axlr_controller /home/emmanuel/AXLR/build/axlr_controller/CMakeFiles/axlr_controller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/axlr_controller_uninstall.dir/depend
 

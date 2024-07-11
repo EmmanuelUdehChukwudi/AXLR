@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/primerobotics/AXLR/src/axlr_description
+CMAKE_SOURCE_DIR = /home/emmanuel/AXLR/src/axlr_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/primerobotics/AXLR/build/axlr_description
+CMAKE_BINARY_DIR = /home/emmanuel/AXLR/build/axlr_description
 
 # Utility rule file for axlr_description_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/axlr_description_uninstall.dir/compiler_depend.make
 include CMakeFiles/axlr_description_uninstall.dir/progress.make
 
 CMakeFiles/axlr_description_uninstall:
-	/usr/bin/cmake -P /home/primerobotics/AXLR/build/axlr_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/emmanuel/AXLR/build/axlr_description/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 axlr_description_uninstall: CMakeFiles/axlr_description_uninstall
 axlr_description_uninstall: CMakeFiles/axlr_description_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/axlr_description_uninstall.dir/clean:
 .PHONY : CMakeFiles/axlr_description_uninstall.dir/clean
 
 CMakeFiles/axlr_description_uninstall.dir/depend:
-	cd /home/primerobotics/AXLR/build/axlr_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/primerobotics/AXLR/src/axlr_description /home/primerobotics/AXLR/src/axlr_description /home/primerobotics/AXLR/build/axlr_description /home/primerobotics/AXLR/build/axlr_description /home/primerobotics/AXLR/build/axlr_description/CMakeFiles/axlr_description_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/emmanuel/AXLR/build/axlr_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emmanuel/AXLR/src/axlr_description /home/emmanuel/AXLR/src/axlr_description /home/emmanuel/AXLR/build/axlr_description /home/emmanuel/AXLR/build/axlr_description /home/emmanuel/AXLR/build/axlr_description/CMakeFiles/axlr_description_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/axlr_description_uninstall.dir/depend
 
