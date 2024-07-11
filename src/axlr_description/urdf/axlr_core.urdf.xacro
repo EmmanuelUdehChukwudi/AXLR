@@ -42,7 +42,7 @@
             </geometry>
             <material name="black"/>
         </collision>
-        <xacro:cylinder_inertia m="0.5" r ="${wheel_diameter/2}" h="${wheel_length}"
+        <xacro:cylinder_inertia m="0.1" r ="${wheel_diameter/2}" h="${wheel_length}"
              xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
     </link>
 
@@ -68,7 +68,7 @@
             </geometry>
             <material name="black"/>
         </collision>
-        <xacro:cylinder_inertia m="0.5" r ="${wheel_diameter/2}" h="${wheel_length}"
+        <xacro:cylinder_inertia m="0.1" r ="${wheel_diameter/2}" h="${wheel_length}"
              xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
     </link>
 
@@ -94,7 +94,7 @@
             </geometry>
             <material name="black"/>
         </collision>
-        <xacro:sphere_inertia m="0.5" r ="${wheel_diameter/4}"
+        <xacro:sphere_inertia m="0.1" r ="${wheel_diameter/4}"
                 xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
     </link>
     <joint name="caster_joint" type="fixed">

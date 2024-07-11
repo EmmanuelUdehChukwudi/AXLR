@@ -1,6 +1,8 @@
 /home/emmanuel/AXLR/install/axlr_description/share/axlr_description/urdf/axlr_core.urdf.xacro
 /home/emmanuel/AXLR/install/axlr_description/share/axlr_description/urdf/axlr_ros2_control.urdf.xacro
+/home/emmanuel/AXLR/install/axlr_description/share/axlr_description/urdf/core.urdf.xacro
 /home/emmanuel/AXLR/install/axlr_description/share/axlr_description/urdf/gazebo_properties.urdf.xacro
+/home/emmanuel/AXLR/install/axlr_description/share/axlr_description/urdf/inertial_macro.urdf.xacro
 /home/emmanuel/AXLR/install/axlr_description/share/axlr_description/urdf/inertial_macros.urdf.xacro
 /home/emmanuel/AXLR/install/axlr_description/share/axlr_description/urdf/main.urdf.xacro
 /home/emmanuel/AXLR/install/axlr_description/share/axlr_description/urdf/properties.urdf.xacro

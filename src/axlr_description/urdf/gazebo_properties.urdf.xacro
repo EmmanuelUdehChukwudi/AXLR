@@ -1,45 +1,46 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <transmission name="right_wheel_transmission">
-        <actuator name="right_wheel_motor" role="right_wheel_actuator"/>
-        <joint name="right_wheel_joint" role="right_joint">
-            <mechanicalReduction>1.0</mechanicalReduction>
-        </joint>
-        <plugin>transmission_interface/SimpleTransmission</plugin>
-    </transmission>
+<robot name="bumperbot" xmlns:xacro="http://ros.org/wiki/xacro">
 
-    <transmission name="left_wheel_transmission">
-        <actuator name="left_wheel_motor" role="left_wheel_actuator"/>
-        <joint name="left_wheel_joint" role="left_joint">
-            <mechanicalReduction>1.0</mechanicalReduction>
-        </joint>
-        <plugin>transmission_interface/SimpleTransmission</plugin>
-    </transmission>
+  <transmission name="wheel_right_transmission">
+    <plugin>transmission_interface/SimpleTransmission</plugin>
+    <actuator name="wheel_right_motor" role="actuator_right"/>
+    <joint name="right_wheel_joint"    role="joint_right">
+      <mechanical_reduction>1.0</mechanical_reduction>
+    </joint>
+  </transmission>
 
-    <gazebo reference="base_link">
-        <material>Gazebo/White</material>
-    </gazebo>
+  <transmission name="wheel_left_transmission">
+    <plugin>transmission_interface/SimpleTransmission</plugin>
+    <actuator name="wheel_left_motor" role="actuator_left"/>
+    <joint name="left_wheel_joint"    role="joint_left">
+      <mechanical_reduction>1.0</mechanical_reduction>
+    </joint>
+  </transmission>
+
+  <!-- Wheels -->
+  <gazebo reference="left_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="right_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
     
-    <gazebo reference="right_wheel_link">
-        <material>Gazebo/Black</material>
-    </gazebo>
+  <!-- Caster Wheels -->
+  <gazebo reference="caster_wheel">
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+  </gazebo>
     
-    <gazebo reference="left_wheel_link">
-        <material>Gazebo/Black</material>
-    </gazebo>
+  <!-- ROS 2 Control -->
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <parameters>$(find axlr_controller)/config/axlr_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
 
-    <gazebo reference="caster_wheel_link">
-        <material>Gazebo/Black</material>
-        <mu1>0.1</mu1>
-        <mu2>0.1</mu2>
-    </gazebo>
-
-    <gazebo>
-        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
-            <robot_param>robot_description</robot_param>
-            <robot_param_node>robot_state_publisher</robot_param_node>
-            <parameters>$(find axlr_controller)/config/axlr_controllers.yaml</parameters>
-        </plugin>
-    </gazebo>
 </robot>
