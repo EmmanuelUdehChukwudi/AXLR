@@ -310,6 +310,21 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(FILES "/home/emmanuel/AXLR/build/axlr_controller/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/axlr_controller/environment")
+ament_cmake_symlink_install_files("/home/emmanuel/AXLR/src/axlr_controller" FILES "/home/emmanuel/AXLR/build/axlr_controller/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/axlr_controller/environment")
+
+# install(FILES "/home/emmanuel/AXLR/build/axlr_controller/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/axlr_controller/environment")
+ament_cmake_symlink_install_files("/home/emmanuel/AXLR/src/axlr_controller" FILES "/home/emmanuel/AXLR/build/axlr_controller/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/axlr_controller/environment")
+
+# install(DIRECTORY "/home/emmanuel/AXLR/build/axlr_controller/ament_cmake_python/axlr_controller/axlr_controller.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/axlr_controller-0.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/emmanuel/AXLR/src/axlr_controller" DIRECTORY "/home/emmanuel/AXLR/build/axlr_controller/ament_cmake_python/axlr_controller/axlr_controller.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/axlr_controller-0.0.0-py3.10.egg-info")
+
+# install(DIRECTORY "/home/emmanuel/AXLR/src/axlr_controller/axlr_controller/" "DESTINATION" "local/lib/python3.10/dist-packages/axlr_controller" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/emmanuel/AXLR/src/axlr_controller" DIRECTORY "/home/emmanuel/AXLR/src/axlr_controller/axlr_controller/" "DESTINATION" "local/lib/python3.10/dist-packages/axlr_controller" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+
+# install(PROGRAMS "axlr_controller/axlr_simple.py" "DESTINATION" "lib/axlr_controller")
+ament_cmake_symlink_install_programs("/home/emmanuel/AXLR/src/axlr_controller" PROGRAMS "axlr_controller/axlr_simple.py" "DESTINATION" "lib/axlr_controller")
+
 # install(DIRECTORY "config" "launch" "DESTINATION" "share/axlr_controller")
 ament_cmake_symlink_install_directory("/home/emmanuel/AXLR/src/axlr_controller" DIRECTORY "config" "launch" "DESTINATION" "share/axlr_controller")
 

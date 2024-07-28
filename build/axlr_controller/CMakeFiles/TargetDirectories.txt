@@ -1,5 +1,7 @@
 /home/emmanuel/AXLR/build/axlr_controller/CMakeFiles/uninstall.dir
 /home/emmanuel/AXLR/build/axlr_controller/CMakeFiles/axlr_controller_uninstall.dir
+/home/emmanuel/AXLR/build/axlr_controller/CMakeFiles/ament_cmake_python_symlink_axlr_controller.dir
+/home/emmanuel/AXLR/build/axlr_controller/CMakeFiles/ament_cmake_python_build_axlr_controller_egg.dir
 /home/emmanuel/AXLR/build/axlr_controller/CMakeFiles/test.dir
 /home/emmanuel/AXLR/build/axlr_controller/CMakeFiles/edit_cache.dir
 /home/emmanuel/AXLR/build/axlr_controller/CMakeFiles/rebuild_cache.dir

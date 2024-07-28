@@ -1,10 +1,21 @@
 import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
-
-
+from launch.actions import DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
 def generate_launch_description():
 
+    wheel_radius_arg = DeclareLaunchArgument(
+        "wheel_radius",
+        default_value = "0.042"
+    )
+    wheel_separation_arg = DeclareLaunchArgument(
+        "wheel_separation",
+        default_value = "0.316"
+    )
+    wheel_radius = LaunchConfiguration("wheel_radius")
+    wheel_separation = LaunchConfiguration("wheel_separation")
+    
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
@@ -13,6 +24,12 @@ def generate_launch_description():
             "--controller-manager",
             "/controller_manager",
         ],
+    )
+    
+    axlr_sim_custom_controller = Node(
+        package="axlr_controller",
+        executable="axlr_simple.py",
+        parameters=[{"wheel_radius": wheel_radius, "wheel_separation": wheel_separation}],
     )
 
     simple_controller = Node(
@@ -26,6 +43,9 @@ def generate_launch_description():
 
     return LaunchDescription(
         [
+            wheel_radius_arg,
+            wheel_separation_arg,
+            axlr_sim_custom_controller,
             joint_state_broadcaster_spawner,
             simple_controller,
         ]
