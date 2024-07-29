@@ -8,7 +8,7 @@ from launch.conditions import UnlessCondition, IfCondition
 def generate_launch_description():
     use_custom_axlr_controller_arg = DeclareLaunchArgument(
         "use_custom_axlr_controller",
-        default_value = "True"
+        default_value = "true"
     )
     wheel_radius_arg = DeclareLaunchArgument(
         "wheel_radius",
