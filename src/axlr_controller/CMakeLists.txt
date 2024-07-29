@@ -22,6 +22,7 @@ ament_python_install_package(${PROJECT_NAME})
 
 install(PROGRAMS
   ${PROJECT_NAME}/axlr_simple.py
+  ${PROJECT_NAME}/noisy_controller.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

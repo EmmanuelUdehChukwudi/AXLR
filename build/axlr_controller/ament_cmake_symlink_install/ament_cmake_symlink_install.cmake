@@ -322,8 +322,8 @@ ament_cmake_symlink_install_directory("/home/emmanuel/AXLR/src/axlr_controller" 
 # install(DIRECTORY "/home/emmanuel/AXLR/src/axlr_controller/axlr_controller/" "DESTINATION" "local/lib/python3.10/dist-packages/axlr_controller" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 ament_cmake_symlink_install_directory("/home/emmanuel/AXLR/src/axlr_controller" DIRECTORY "/home/emmanuel/AXLR/src/axlr_controller/axlr_controller/" "DESTINATION" "local/lib/python3.10/dist-packages/axlr_controller" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install(PROGRAMS "axlr_controller/axlr_simple.py" "DESTINATION" "lib/axlr_controller")
-ament_cmake_symlink_install_programs("/home/emmanuel/AXLR/src/axlr_controller" PROGRAMS "axlr_controller/axlr_simple.py" "DESTINATION" "lib/axlr_controller")
+# install(PROGRAMS "axlr_controller/axlr_simple.py" "axlr_controller/noisy_controller.py" "DESTINATION" "lib/axlr_controller")
+ament_cmake_symlink_install_programs("/home/emmanuel/AXLR/src/axlr_controller" PROGRAMS "axlr_controller/axlr_simple.py" "axlr_controller/noisy_controller.py" "DESTINATION" "lib/axlr_controller")
 
 # install(DIRECTORY "config" "launch" "DESTINATION" "share/axlr_controller")
 ament_cmake_symlink_install_directory("/home/emmanuel/AXLR/src/axlr_controller" DIRECTORY "config" "launch" "DESTINATION" "share/axlr_controller")

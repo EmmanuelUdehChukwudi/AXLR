@@ -1,6 +1,7 @@
 setup.py
 axlr_controller/__init__.py
 axlr_controller/axlr_simple.py
+axlr_controller/noisy_controller.py
 axlr_controller.egg-info/PKG-INFO
 axlr_controller.egg-info/SOURCES.txt
 axlr_controller.egg-info/dependency_links.txt

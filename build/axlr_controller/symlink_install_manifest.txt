@@ -6,7 +6,9 @@
 /home/emmanuel/AXLR/install/axlr_controller/local/lib/python3.10/dist-packages/axlr_controller-0.0.0-py3.10.egg-info/top_level.txt
 /home/emmanuel/AXLR/install/axlr_controller/local/lib/python3.10/dist-packages/axlr_controller/__init__.py
 /home/emmanuel/AXLR/install/axlr_controller/local/lib/python3.10/dist-packages/axlr_controller/axlr_simple.py
+/home/emmanuel/AXLR/install/axlr_controller/local/lib/python3.10/dist-packages/axlr_controller/noisy_controller.py
 /home/emmanuel/AXLR/install/axlr_controller/lib/axlr_controller/axlr_simple.py
+/home/emmanuel/AXLR/install/axlr_controller/lib/axlr_controller/noisy_controller.py
 /home/emmanuel/AXLR/install/axlr_controller/share/axlr_controller/config/axlr_controllers.yaml
 /home/emmanuel/AXLR/install/axlr_controller/share/axlr_controller/launch/controller.launch.py
 /home/emmanuel/AXLR/install/axlr_controller/share/ament_index/resource_index/package_run_dependencies/axlr_controller
