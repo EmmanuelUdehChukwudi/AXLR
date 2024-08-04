@@ -1,0 +1,8 @@
+<library path= "axlr_firmware">
+    <class name ="axlr_firmware/AXLRInterface" type="axlr_firmware::AXLRInterface"
+        base_class_type ="hardware_interface::SystemInterface">
+        <description>
+            AXLR Hardware Interface
+        </description>
+    </class>
+</library>

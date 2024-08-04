@@ -42,7 +42,7 @@ class AXLRController(Node):
         
         self.odometry_msg = Odometry()
         self.odometry_msg.header.frame_id = "odom"
-        self.odometry_msg.child_frame_id = "base_link"
+        self.odometry_msg.child_frame_id = "base_footprint"
         self.odometry_msg.pose.pose.orientation.x = 0.0
         self.odometry_msg.pose.pose.orientation.y = 0.0
         self.odometry_msg.pose.pose.orientation.z = 0.0
@@ -51,7 +51,7 @@ class AXLRController(Node):
         self.tf_broadcaster_ = TransformBroadcaster(self)
         self.stamped_transform_ = TransformStamped()
         self.stamped_transform_.header.frame_id = "odom"
-        self.stamped_transform_.child_frame_id = "base_link"
+        self.stamped_transform_.child_frame_id = "base_footprint"
         
     def JointCallback(self, msg):
         try:

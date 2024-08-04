@@ -1,0 +1,8 @@
+setup.py
+axlr_localisation/__init__.py
+axlr_localisation/kalman_filter_1D.py
+axlr_localisation/republish_imu.py
+axlr_localisation.egg-info/PKG-INFO
+axlr_localisation.egg-info/SOURCES.txt
+axlr_localisation.egg-info/dependency_links.txt
+axlr_localisation.egg-info/top_level.txt

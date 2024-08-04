@@ -1,0 +1,4 @@
+source;share/axlr_firmware/local_setup.bash
+source;share/axlr_firmware/local_setup.dsv
+source;share/axlr_firmware/local_setup.sh
+source;share/axlr_firmware/local_setup.zsh

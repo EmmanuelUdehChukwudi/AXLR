@@ -1,0 +1,3 @@
+source;share/axlr_localisation/environment/ament_prefix_path.sh
+source;share/axlr_localisation/environment/path.sh
+source;share/axlr_localisation/environment/pythonpath.sh

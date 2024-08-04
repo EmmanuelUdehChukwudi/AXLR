@@ -3,6 +3,7 @@
     <xacro:include filename="properties.urdf.xacro"/>
     <!-- <xacro:include filename="inertial_macros.urdf.xacro"/> -->
     <xacro:include filename="core.urdf.xacro"/>
+    <xacro:include filename="imu.urdf.xacro"/>
     <xacro:include filename="gazebo_properties.urdf.xacro"/>
     <xacro:include filename="axlr_ros2_control.urdf.xacro"/>
 </robot>
